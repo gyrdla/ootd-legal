@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Destek · Support · OOTD: The Social Closet</title>
+<style>
+:root{--bg:#ECE9F2;--surface:#fff;--ink:#241B2D;--muted:#6C6377;--line:#D7D1E1;--accent:#C92A63;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16111B;--surface:#211A28;--ink:#F0EBF5;--muted:#A69CB2;--line:#382F42;--accent:#F0689B;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#16111B;--surface:#211A28;--ink:#F0EBF5;--muted:#A69CB2;--line:#382F42;--accent:#F0689B;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 18px 64px}
+h1{font-size:clamp(1.7rem,6vw,2.4rem);line-height:1.1;letter-spacing:-.02em;margin:8px 0 6px}
+h2{font-size:1.15rem;margin:30px 0 6px}
+p,li{max-width:66ch}
+a{color:var(--accent)}
+.meta{color:var(--muted);font-size:.9rem}
+.lang{display:flex;gap:6px;margin-bottom:10px}
+.lang button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:16px 0}
+[hidden]{display:none}
+</style>
+</head>
+<body>
+<main>
+<div class="lang"><button data-l="tr" aria-pressed="true">Türkçe</button><button data-l="en" aria-pressed="false">English</button></div>
+
+<section lang="tr" id="tr">
+<h1>Destek</h1>
+<p class="meta">OOTD: The Social Closet</p>
+<div class="box">Bir sorun mu yaşıyorsun, bir öneri mi göndermek istiyorsun ya da uygunsuz içerik/kullanıcı mı bildireceksin? Bize e-posta ile ulaşabilirsin: <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a></div>
+<h2>Yanıt süresi</h2>
+<p>Şikâyet ve destek taleplerine genellikle 24-48 saat içinde yanıt veriyoruz.</p>
+<h2>Sık sorulanlar</h2>
+<p><strong>Hesabımı nasıl silerim?</strong> Uygulama içinde Ayarlar → Hesabımı sil.</p>
+<p><strong>Verilerim nerede saklanıyor?</strong> Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a> sayfasına bakabilirsin.</p>
+</section>
+
+<section lang="en" id="en" hidden>
+<h1>Support</h1>
+<p class="meta">OOTD: The Social Closet</p>
+<div class="box">Running into a problem, have a suggestion, or need to report inappropriate content or a user? Reach us by email: <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a></div>
+<h2>Response time</h2>
+<p>We typically respond to support and report requests within 24-48 hours.</p>
+<h2>FAQ</h2>
+<p><strong>How do I delete my account?</strong> In the app: Settings → Delete account.</p>
+<p><strong>Where is my data stored?</strong> See the <a href="privacy.html">Privacy Policy</a> page for details.</p>
+</section>
+</main>
+<script>
+(function(){
+var btns=document.querySelectorAll('.lang button');
+function set(l){document.getElementById('tr').hidden=l!=='tr';document.getElementById('en').hidden=l!=='en';document.documentElement.lang=l;
+btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l?'true':'false')});}
+btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.l)})});
+var q=new URLSearchParams(location.search).get('lang');
+set(q==='en'||q==='tr'?q:((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en'));
+})();
+</script>
+</body>
+</html>
