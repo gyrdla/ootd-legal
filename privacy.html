@@ -29,114 +29,126 @@ a{color:var(--accent)}
 
 <section lang="tr" id="tr">
 <h1>Gizlilik Politikası</h1>
-<p class="meta">OOTD: The Social Closet · Son güncelleme: 24 Eylül 2026</p>
+<p class="meta">OOTD: The Social Closet · Son güncelleme: 3 Ekim 2026</p>
 
-<div class="box">Kısaca: Dolabın varsayılan olarak yalnızca cihazında durur. Bir şey ancak sen istediğinde cihazından çıkar: yapay zekayı kullandığında, cihazlar arası senkronu açtığında ya da veri paylaşımına onay verdiğinde. Her birini istediğin zaman kapatabilir ve verilerini sildirebilirsin.</div>
+<div class="box">Kısaca: Dolabın önce cihazında durur. Giriş yaparsan dolabın şifreli olarak yedeklenir ve istediğin parçaları Keşfet'te paylaşabilirsin. Yapay zeka yalnızca sen izin verip kullandığında çalışır. Reklam ve izleme yoktur, verilerin satılmaz. Hesabını ve verilerini uygulama içinden istediğin an silebilirsin.</div>
 
 <h2>1. Veri sorumlusu</h2>
 <p>Ahsen Gülşah Yaradılmış, İstanbul, Türkiye. İletişim: <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a></p>
 
 <h2>2. Cihazında saklananlar</h2>
-<p>Eklediğin kıyafet, ayakkabı ve çanta fotoğrafları; tür, renk, dolaptaki yer ve notlar; giyme geçmişin; kombinlerin; tarz analizin; ayarların (Gemini API anahtarın dahil). Bunlar yalnızca cihazındaki uygulama depolamasında tutulur ve uygulamayı silene kadar kalır. Fotoğraflardaki arka plan kaldırma işlemi tamamen cihazında yapılır; fotoğraf bunun için hiçbir yere gönderilmez.</p>
+<p>Eklediğin kıyafet, ayakkabı, çanta ve makyaj fotoğrafları; tür, renk, dolaptaki yer, marka, mağaza ve notlar; giyme geçmişin; kombinlerin ve kendi kombin puanların; dolap odası düzenin; seyahat listelerin; tarz analizin ve ayarların. Fotoğraflardaki arka plan kaldırma işlemi tamamen cihazında yapılır.</p>
 
-<h2>3. Yapay zeka (Google Gemini)</h2>
-<p>"Tarzımı analiz et" ya da "Sor" özelliğini kullandığında, kıyafet fotoğraflarının küçültülmüş kopyaları, parça etiketlerin, giyme geçmişin ve sorunun bizim sunucumuz (Cloudflare) üzerinden Google'ın Gemini API hizmetine iletilir; sunucumuz bu içerikleri saklamaz, yalnızca hesabına bağlı günlük kullanım sayısını tutar. Bu özellik giriş yapmayı gerektirir ve yalnızca sen başlattığında çalışır. Avrupa Ekonomik Alanı, İsviçre ve Birleşik Krallık'ta yapay zeka özelliği kapalıdır. Google bu verileri kendi koşullarına göre işler; ücretsiz kullanımda Google, gönderilen içerikleri ürünlerini geliştirmek için kullanabilir ve bu içerikler insan incelemecileri tarafından görülebilir. Ayrıntılar: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Koşulları</a>. Yüz fotoğrafı ya da kişisel bilgi göndermemen önerilir.</p>
+<h2>3. Hesap (isteğe bağlı)</h2>
+<p>Giriş yapmadan uygulamanın kendi dolabınla ilgili bütün özelliklerini kullanabilirsin. Apple ya da Google ile giriş yaparsan adın, e-posta adresin ve hesabına ait sabit bir kimlik numarası alınır; şifreni görmeyiz. Girişten önce <a href="terms.html">Kullanım Koşulları</a>'nı kabul etmen istenir ve kabul ettiğin sürüm hesabınla birlikte kaydedilir. Ayarlar &gt; Hesap &gt; "Hesabımı sil" ile hesabını ve aşağıdaki bütün sunucu verilerini kalıcı olarak silebilirsin.</p>
 
-<h2>4. Cihazlar arası senkron (isteğe bağlı)</h2>
-<p>Senkronu açarsan dolabının bir kopyası Cloudflare altyapısında çalışan sunucumuzda saklanır. Veriler cihazından çıkmadan önce yalnızca senin bildiğin senkron koduyla şifrelenir (AES-256-GCM). Sunucuda yalnızca okunamayan şifreli veri tutulur; biz de dahil kimse içeriği göremez. Ayarlar'dan "Buluttaki dolabımı sil" ile bu kopyayı istediğin zaman silebilirsin.</p>
-<p><strong>Hesap (isteğe bağlı).</strong> İstersen Google ya da Apple ile giriş yapabilirsin. Bu durumda yalnızca adın, e-posta adresin ve hesabına ait sabit bir kimlik numarası alınır ve Cloudflare altyapısında saklanır; şifreni görmeyiz. Giriş yapmak zorunda değilsin. Ayarlar'daki "Hesabımı sil" düğmesiyle hesap kaydını ve oturumlarını istediğin zaman kalıcı olarak silebilirsin.</p>
+<h2>4. Hesaba otomatik yedek</h2>
+<p>Giriş yaptığında dolabın (fotoğraflar küçültülmüş olarak, yerler, kombinler, dolap odası ve seyahatler) Cloudflare altyapısındaki sunucumuza yedeklenir; böylece uygulamayı silip kursan ya da telefon değiştirsen aynı hesapla girince dolabın geri gelir. Veriler cihazından çıkmadan önce şifrelenir (AES-256-GCM) ve sunucuda şifreli olarak tutulur. Yeni telefonda geri yükleyebilmen için şifreleme anahtarı hesabına bağlı olarak ayrı bir veritabanında saklanır; bu verilere yalnızca yedeği geri yüklemek için erişilir. Yedeği Ayarlar'dan kapatabilir ya da silebilirsin; hesabını silince yedek de silinir.</p>
 
-<h2>5. Veri paylaşımı (isteğe bağlı, açık onayla)</h2>
-<p>Uygulama ilk açılışta, eklediklerini uygulama sahibiyle paylaşmak isteyip istemediğini sorar. Onay verirsen fotoğrafların, parça bilgilerin, giyme geçmişin, kombinlerin, tarz analizin ve isteğe bağlı olarak yazdığın adın, yalnızca uygulama sahibinin erişebildiği gizli bir depoya kopyalanır. Amaç onay ekranında yazar. Gemini anahtarın hiçbir zaman gönderilmez. Onayını istediğin zaman Ayarlar'dan geri alabilirsin; geri aldığında gönderilen verilerin tamamı silinir. Onay vermezsen hiçbir şey gönderilmez ve uygulama aynen çalışır.</p>
+<h2>5. Yapay zeka (Google Gemini)</h2>
+<p>Yapay zeka özellikleri (tarz analizi, soru sorma, kombin puanlama, "Bugün ne giydim" fotoğrafındaki parçaları bulma, toplu eklemede tür ve renk seçme) ilk kullanımda senden açık izin ister. İzin verirsen ve bir özelliği kullandığında, o özellik için gereken fotoğraflar (kıyafet ve kombin fotoğrafları, "Bugün ne giydim" için üzerinde kombin olan fotoğrafın dahil), parça etiketleri, giyme geçmişi ve sorun sunucumuz üzerinden Google'ın Gemini API hizmetine iletilir. Adın, e-postan ve konumun gönderilmez. Sunucumuz bu içerikleri saklamaz; yalnızca günlük kullanım sayısını tutar. Google bu verileri kendi koşullarına göre işler; ücretsiz kullanımda Google, içerikleri ürünlerini geliştirmek için kullanabilir ve içerikler insan incelemecileri tarafından görülebilir (<a href="https://ai.google.dev/gemini-api/terms">Gemini API Koşulları</a>). İznini Ayarlar &gt; Yapay zeka bölümünden geri alabilirsin. Avrupa Ekonomik Alanı, İsviçre ve Birleşik Krallık'ta yapay zeka kapalıdır.</p>
 
-<h2>5b. Herkese açık paylaşım, yorum ve beğeni (isteğe bağlı)</h2>
-<p>Giriş yaptıysan ve bir kullanıcı adı seçtiysen, istediğin parçayı ya da kombini tek tek "herkese açık" yapabilirsin. Bu durumda parçanın adı, türü, rengi, markası, aldığın mağaza, eklediysen ürün linki, fotoğrafı ve kullanıcı adın uygulamadaki tüm kullanıcılara görünür; saklama yerin, notların ve fiyat gibi bilgiler asla paylaşılmaz. Her paylaşım için yorumlara ve beğenilere izin verip vermeyeceğini sen seçersin; paylaşımını istediğin an kapatabilirsin, kapattığında paylaşım, yorumları ve beğenileri silinir. Diğer kullanıcıların paylaşımı kaç kez görüntülediğini, beğendiğini ve favorilere eklediğini (kişi adı olmadan sayı olarak) görebilirsin.</p>
-<p>Başka kullanıcıları takip edebilirsin. Kimi takip ettiğin sunucumuzda saklanır; bir kullanıcının takipçi ve takip ettiği kişi sayısı diğer kullanıcılara sayı olarak görünür, takip edenlerin listesi gösterilmez. Takibi istediğin an bırakabilirsin; bir kullanıcıyı engellediğinde aranızdaki takip iki yönde de kalkar.</p>
-<p>Yorumlar ve paylaşımlar kullanıcı içeriğidir. Uygunsuz içerik ve kullanıcılar uygulama içinden şikayet edilebilir, kullanıcılar engellenebilir; kurallara aykırı içerik kaldırılır ve tekrarlayan ihlallerde hesap kapatılabilir. Sunucumuz basit bir küfür/spam filtresi uygular. Şikayetler için: ootdthesocialwardrobe@gmail.com. Hesabını sildiğinde tüm paylaşımların, yorumların, beğenilerin ve engelleme ve takip kayıtların da silinir.</p>
+<h2>6. Keşfet: paylaşım, yorum, beğeni, puan ve takip (isteğe bağlı)</h2>
+<p>Giriş yapıp bir kullanıcı adı seçtiysen, istediğin parçayı ya da kombini tek tek herkese açık paylaşabilirsin. Paylaşınca adı, türü, rengi, markası, mağazası, varsa ürün linki, fotoğrafı ve kullanıcı adın diğer kullanıcılara görünür; dolaptaki yeri, notların ve fiyat paylaşılmaz. Yorumların, beğenilerin, favorilerin ve takip ettiğin kişiler sunucumuzda saklanır. Kombinlere verilen 1-10 puanlar: ortalama ve kişi sayısı kombin sahibine ve karşılıklı takipleştiği kişilere görünür; kimin kaç puan verdiğini yalnızca kombin sahibi görür. Paylaşımı istediğin an durdurabilirsin; durdurunca beğenileri, yorumları ve puanları silinir.</p>
 
-<h2>6. Üçüncü taraf hizmetler</h2>
+<h2>7. Moderasyon ve güvenlik</h2>
+<p>Her paylaşımda, yorumda ve profilde "Bildir" ve "Kullanıcıyı engelle" vardır. Bir bildirimde bildiren kişi, bildirilen içerik ve sebep sunucumuzda saklanır; bildirilen içerik bildiren kişiye artık gösterilmez, birden çok kişinin bildirdiği içerik inceleme bitene kadar gizlenir. Bildirimler 24 saat içinde incelenir; kurallara aykırı içerik kaldırılır, kuralı çiğneyen kullanıcının hesabı kapatılır ve bu kayıt saklanır. Yorumlar ve paylaşım adları otomatik bir uygunsuz kelime filtresinden geçer.</p>
+
+<h2>8. Bildirimler</h2>
+<p>Uygulama, telefonunda yerel hatırlatmalar planlar (sunucuya bir şey gönderilmez). Giriş yaptıysan ve bildirimlere izin verdiysen, takip, beğeni, favori, yorum ve puan bildirimleri için cihazının bildirim kimliği (Google Firebase Cloud Messaging belirteci) ve dil tercihin hesabınla birlikte sunucumuzda saklanır; bildirimler Firebase ve Apple Push Notification service üzerinden iletilir. Bildirimleri Ayarlar'dan ya da telefon ayarlarından kapatabilirsin; çıkış yapınca ya da hesabını silince bildirim kimliğin silinir.</p>
+
+<h2>9. Araştırma için veri paylaşımı (isteğe bağlı, açık onayla)</h2>
+<p>Ayarlar'da, eklediklerini uygulamayı geliştirmek amacıyla uygulama sahibiyle paylaşmak için ayrı bir onay seçeneği vardır. Onay verirsen fotoğrafların, parça bilgilerin, giyme geçmişin ve kombinlerin yalnızca uygulama sahibinin erişebildiği gizli bir depoya kopyalanır. Onayını istediğin zaman geri alabilirsin; geri aldığında gönderilen veriler silinir. Onay vermezsen hiçbir şey gönderilmez.</p>
+
+<h2>10. Üçüncü taraf hizmetler</h2>
 <ul>
-<li><strong>Apple App Store / TestFlight</strong> (uygulamanın dağıtımı)</li>
-<li><strong>Cloudflare</strong> (senkron ve paylaşım sunucusu)</li>
-<li><strong>Google Gemini API</strong> (yapay zeka)</li>
+<li><strong>Apple</strong> (App Store, TestFlight, Apple ile giriş, Apple Push Notification service)</li>
+<li><strong>Google</strong> (Google ile giriş, Gemini API, Firebase Cloud Messaging)</li>
+<li><strong>Cloudflare</strong> (sunucu, veritabanı ve yedek)</li>
 </ul>
-<p>Bu hizmetler, çalışabilmek için IP adresin gibi teknik bağlantı bilgilerini kendi politikalarına göre işleyebilir. Sunucular Türkiye dışında (ör. ABD, AB) bulunabilir; isteğe bağlı özellikleri açarak bu aktarıma onay vermiş olursun.</p>
+<p>Bu hizmetler, çalışabilmek için IP adresin gibi teknik bağlantı bilgilerini kendi politikalarına göre işleyebilir. Sunucular Türkiye dışında (ör. ABD, AB) bulunabilir; isteğe bağlı özellikleri kullanarak bu aktarıma onay vermiş olursun.</p>
 
-<h2>7. Reklam ve izleme</h2>
-<p>Uygulamada reklam, reklam takibi ya da analiz/izleme aracı yoktur. Verilerin satılmaz.</p>
+<h2>11. Reklam ve izleme</h2>
+<p>Uygulamada reklam, reklam takibi ya da analiz/izleme aracı yoktur. Verilerin satılmaz ve başka uygulamalarla izleme amacıyla birleştirilmez.</p>
 
-<h2>8. Saklama süresi</h2>
+<h2>12. Saklama süresi</h2>
 <ul>
 <li>Cihazındaki veriler: uygulamayı ya da verileri silene kadar.</li>
-<li>Senkron verileri: senkronu silene kadar.</li>
-<li>Paylaşım verileri: onayını geri alana kadar ya da uygulama sona erdiğinde silinir.</li>
+<li>Hesap, yedek, paylaşımlar, yorumlar, puanlar, takipler ve bildirim kimliği: hesabını silene kadar (paylaşımı durdurursan o paylaşımın verileri hemen silinir).</li>
+<li>Bildirim ve yasaklama kayıtları: hesap silinene kadar; kural ihlali nedeniyle kapatılan hesapların kaydı tekrar kayıt olmayı önlemek için saklanabilir.</li>
 </ul>
 
-<h2>9. Hakların</h2>
+<h2>13. Hakların</h2>
 <p>KVKK (6698 sayılı Kanun, madde 11) ve uygulanabildiği ölçüde GDPR kapsamında; verilerinin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltme, silme, işlemeye itiraz etme ve onayını geri alma haklarına sahipsin. Bunların çoğunu uygulama içinden kendin yapabilirsin; diğer talepler için <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a> adresine yazabilirsin.</p>
 
-<h2>10. Yaş sınırı</h2>
+<h2>14. Yaş sınırı</h2>
 <p>Uygulama 18 yaşından küçükler için tasarlanmamıştır.</p>
 
-<h2>11. Değişiklikler</h2>
+<h2>15. Değişiklikler</h2>
 <p>Bu politika değişirse güncel hali bu sayfada yayımlanır ve üstteki tarih güncellenir. Önemli değişikliklerde uygulama içinde bilgilendirme yapılır.</p>
 </section>
 
 <section lang="en" id="en" hidden>
 <h1>Privacy Policy</h1>
-<p class="meta">OOTD: The Social Closet · Last updated: September 24, 2026</p>
+<p class="meta">OOTD: The Social Closet · Last updated: October 3, 2026</p>
 
-<div class="box">In short: your wardrobe stays on your device by default. Data leaves your device only when you choose: when you use the AI features, turn on device sync, or consent to data sharing. You can turn each off and have your data deleted at any time.</div>
+<div class="box">In short: your wardrobe lives on your device first. If you sign in, it is backed up in encrypted form and you can share chosen items in Discover. AI runs only when you allow it and use it. There are no ads and no tracking, and your data is never sold. You can delete your account and data in the app at any time.</div>
 
 <h2>1. Data controller</h2>
 <p>Ahsen Gülşah Yaradılmış, Istanbul, Türkiye. Contact: <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a></p>
 
 <h2>2. Stored on your device</h2>
-<p>Photos of your clothes, shoes and bags; type, colour, storage location and notes; wear history; outfits; style analysis; settings (including your Gemini API key). These are kept only in the app's storage on your device until you delete the app. Background removal runs entirely on your device; photos are not sent anywhere for it.</p>
+<p>Photos of your clothes, shoes, bags and makeup; type, colour, storage location, brand, store and notes; wear history; outfits and your own outfit scores; your closet room layout; trip lists; style analysis and settings. Background removal runs entirely on your device.</p>
 
-<h2>3. AI (Google Gemini)</h2>
-<p>When you use "Analyse my style" or "Ask", reduced copies of your clothing photos, item labels, wear history and your question are relayed through our server (Cloudflare) to Google's Gemini API; our server does not store this content and only keeps a daily usage count tied to your account. This feature requires signing in and runs only when you start it. The AI feature is turned off in the European Economic Area, Switzerland and the United Kingdom. Google processes this data under its own terms; on the free tier Google may use submitted content to improve its products and it may be seen by human reviewers. Details: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms</a>. Please avoid sending photos of faces or personal information.</p>
+<h2>3. Account (optional)</h2>
+<p>You can use every closet feature without signing in. If you sign in with Apple or Google, we receive your name, email address and a fixed account identifier; we never see your password. Before signing in you are asked to accept the <a href="terms.html">Terms of Use</a>, and the version you accepted is stored with your account. In Settings &gt; Account &gt; "Delete my account" you can permanently delete your account and all server data described below.</p>
 
-<h2>4. Device sync (optional)</h2>
-<p>If you turn on sync, a copy of your wardrobe is stored on our server running on Cloudflare. Data is encrypted on your device with a sync code only you know (AES-256-GCM) before it leaves. The server holds only unreadable encrypted data; nobody, including us, can see its contents. You can delete this copy at any time via Settings → "Delete my cloud wardrobe".</p>
-<p><strong>Account (optional).</strong> You may sign in with Google or Apple. In that case we receive and store only your name, email address and a fixed account identifier on Cloudflare infrastructure; we never see your password. Signing in is not required. With "Delete my account" in Settings you can permanently delete your account record and sessions at any time.</p>
+<h2>4. Automatic account backup</h2>
+<p>When you are signed in, your closet (photos in reduced size, places, outfits, closet room and trips) is backed up to our server on Cloudflare, so it comes back if you reinstall the app or change phones and sign in with the same account. Data is encrypted before it leaves your device (AES-256-GCM) and stored encrypted on the server. So that you can restore it on a new phone, the encryption key is stored with your account in a separate database; it is only used to restore your backup. You can turn the backup off or delete it in Settings; deleting your account deletes the backup too.</p>
 
-<h2>5. Data sharing (optional, with explicit consent)</h2>
-<p>On first launch the app asks whether you want to share what you add with the app owner. If you agree, your photos, item details, wear history, outfits, style analysis and, optionally, the name you enter are copied to a private repository that only the app owner can access. The purpose is shown on the consent screen. Your Gemini key is never sent. You can withdraw consent at any time in Settings; when you do, all shared data is deleted. If you do not consent, nothing is sent and the app works the same.</p>
+<h2>5. AI (Google Gemini)</h2>
+<p>AI features (style analysis, asking questions, outfit scoring, finding items in a "What I wore today" photo, choosing type and colour when adding in bulk) ask for your explicit permission the first time. If you allow it and use a feature, the photos it needs (item and outfit photos, including a photo of you wearing the outfit for "What I wore today"), item labels, wear history and your question are relayed through our server to Google's Gemini API. Your name, email and location are not sent. Our server does not store this content; it only keeps a daily usage count. Google processes the data under its own terms; on the free tier Google may use the content to improve its products and it may be seen by human reviewers (<a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a>). You can revoke your permission in Settings &gt; AI. AI is not available in the EEA, Switzerland and the UK.</p>
 
-<h2>5b. Public sharing, comments and likes (optional)</h2>
-<p>If you are signed in and have chosen a username, you can make individual items or outfits "public". Their name, type, colour, brand, the store you bought them at, the product link if you added one, their photo and your username then become visible to all users of the app; your storage location, notes and price are never shared. For each share you choose whether comments and likes are allowed; you can stop sharing at any time, which deletes the share together with its comments and likes. You can see how many times your shares were viewed, liked and favourited (as counts, without names).</p>
-<p>You can follow other users. Who you follow is stored on our server; a user's follower and following counts are visible to other users as numbers, and the list of followers is not shown. You can unfollow at any time; blocking a user removes follows between you in both directions.</p>
-<p>Comments and shares are user-generated content. Inappropriate content and users can be reported inside the app and users can be blocked; content that breaks the rules is removed and repeat offenders may be banned. Our server applies a basic profanity/spam filter. To report a problem: ootdthesocialwardrobe@gmail.com. When you delete your account, all your shares, comments, likes, block and follow records are deleted too.</p>
+<h2>6. Discover: posts, comments, likes, scores and follows (optional)</h2>
+<p>If you sign in and choose a username, you can make individual items or outfits public. Their name, type, colour, brand, store, product link (if any), photo and your username become visible to other users; storage location, notes and price are never shared. Your comments, likes, favourites and the people you follow are stored on our server. Outfit scores (1-10): the average and number of scores are visible to the outfit's owner and to people who follow each other with the owner; only the owner sees who gave which score. You can stop sharing at any time; the post's likes, comments and scores are then deleted.</p>
 
-<h2>6. Third-party services</h2>
+<h2>7. Moderation and safety</h2>
+<p>Every post, comment and profile has "Report" and "Block user". For a report we store who reported, what was reported and the reason; reported content is no longer shown to the reporter, and content reported by several people is hidden until reviewed. Reports are reviewed within 24 hours; content that breaks the rules is removed, the user who posted it is banned and this record is kept. Comments and post titles pass through an automatic filter for objectionable words.</p>
+
+<h2>8. Notifications</h2>
+<p>The app schedules local reminders on your phone (nothing is sent to a server). If you are signed in and allow notifications, your device's push token (Google Firebase Cloud Messaging token) and language are stored with your account so you can receive follow, like, favourite, comment and score notifications, delivered via Firebase and the Apple Push Notification service. You can turn notifications off in Settings or in your phone's settings; your push token is deleted when you sign out or delete your account.</p>
+
+<h2>9. Data sharing for research (optional, with explicit consent)</h2>
+<p>Settings has a separate option to share what you add with the app owner to improve the app. If you consent, your photos, item details, wear history and outfits are copied to a private store only the app owner can access. You can withdraw consent at any time, and the shared data is then deleted. If you do not consent, nothing is sent.</p>
+
+<h2>10. Third-party services</h2>
 <ul>
-<li><strong>Apple App Store / TestFlight</strong> (app distribution)</li>
-<li><strong>Cloudflare</strong> (sync and sharing server)</li>
-<li><strong>Google Gemini API</strong> (AI)</li>
+<li><strong>Apple</strong> (App Store, TestFlight, Sign in with Apple, Apple Push Notification service)</li>
+<li><strong>Google</strong> (Sign in with Google, Gemini API, Firebase Cloud Messaging)</li>
+<li><strong>Cloudflare</strong> (server, database and backup)</li>
 </ul>
-<p>These services may process technical connection data such as your IP address under their own policies. Servers may be located outside Türkiye (e.g. USA, EU); by turning on optional features you consent to this transfer.</p>
+<p>These services may process technical connection data such as your IP address under their own policies. Servers may be located outside Türkiye (e.g. US, EU); by using optional features you consent to this transfer.</p>
 
-<h2>7. Ads and tracking</h2>
-<p>The app contains no ads, ad tracking, or analytics/tracking tools. Your data is not sold.</p>
+<h2>11. Ads and tracking</h2>
+<p>There are no ads, ad tracking or analytics/tracking tools in the app. Your data is not sold and is not combined with other apps' data for tracking.</p>
 
-<h2>8. Retention</h2>
+<h2>12. Retention</h2>
 <ul>
-<li>On-device data: until you delete the app or the data.</li>
-<li>Sync data: until you delete your cloud wardrobe.</li>
-<li>Shared data: until you withdraw consent, or when the app is discontinued.</li>
+<li>Data on your device: until you delete the app or the data.</li>
+<li>Account, backup, posts, comments, scores, follows and push token: until you delete your account (stopping a post deletes that post's data immediately).</li>
+<li>Report and ban records: until the account is deleted; records of accounts closed for rule violations may be kept to prevent re-registration.</li>
 </ul>
 
-<h2>9. Your rights</h2>
-<p>Under Turkish data protection law (KVKK, Law No. 6698, Art. 11) and, where applicable, the GDPR, you have the right to know whether your data is processed, to request information, rectification and erasure, to object to processing, and to withdraw consent. You can do most of this yourself in the app; for other requests write to <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a>.</p>
+<h2>13. Your rights</h2>
+<p>Under KVKK (Law No. 6698, Article 11) and, where applicable, the GDPR, you have the right to learn whether your data is processed, request information, rectification and erasure, object to processing and withdraw consent. You can do most of this in the app; for anything else write to <a href="mailto:ootdthesocialwardrobe@gmail.com">ootdthesocialwardrobe@gmail.com</a>.</p>
 
-<h2>10. Age</h2>
-<p>The app is not intended for people under 18.</p>
+<h2>14. Age</h2>
+<p>The app is not designed for people under 18.</p>
 
-<h2>11. Changes</h2>
-<p>If this policy changes, the current version will be published on this page with an updated date. Significant changes will be announced in the app.</p>
+<h2>15. Changes</h2>
+<p>If this policy changes, the current version is published on this page and the date above is updated. You will be informed in the app about significant changes.</p>
 </section>
-</main>
+
 <script>
 (function(){
 var btns=document.querySelectorAll('.lang button');
